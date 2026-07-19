@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Vamsi Sahukari — Software Engineer</title>
+<meta name="description" content="Portfolio of Sai Vamsi Sahukari, Software Engineer at Arista Networks working on campus fabric architecture and SD-WAN systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="brand">Sai Vamsi <span class="brand-mark"></span> Sahukari</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="field-label">Software Engineer // Arista Networks</span>
+        <h1 class="page-title" style="margin-top:14px;">Building the systems that hold campus networks together.</h1>
+        <p class="lede">I design and ship infrastructure for large-scale network fabrics — from switch-aggregation architecture serving thousands of devices, to the Go microservices that keep SD-WAN telemetry flowing in real time.</p>
+        <div class="hero-actions">
+          <a href="experience.html" class="btn primary">View experience</a>
+          <a href="/Vamsi_Resume.pdf" class="btn">Download résumé</a>
+        </div>
+        <div class="hero-meta">
+          <span>Hyderabad, India</span>
+          <a href="mailto:saivamsisahukari2002@gmail.com">saivamsisahukari2002@gmail.com</a>
+          <a href="https://linkedin.com/in/sai-vamsi-sahukari" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/SaiVamsi" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="diagram-frame">
+        <div class="cap"><span>FIG. 01</span><span>SWAG TOPOLOGY</span></div>
+        <svg viewBox="0 0 360 300" width="100%" role="img" aria-label="Diagram of switches aggregating into one logical system">
+          <defs>
+            <style>
+              .n { fill: var(--paper); stroke: var(--navy); stroke-width: 1.6; }
+              .n-core { fill: var(--navy-deep); }
+              .edge { stroke: var(--rule-strong); stroke-width: 1.2; }
+              .edge-live { stroke: var(--amber); stroke-width: 1.4; stroke-dasharray: 4 4; animation: dash 6s linear infinite; }
+              .lbl { font-family: var(--mono); font-size: 9px; fill: var(--steel); }
+              @keyframes dash { to { stroke-dashoffset: -80; } }
+              @media (prefers-reduced-motion: reduce) { .edge-live { animation: none; } }
+            </style>
+          </defs>
+
+          <!-- edges to core -->
+          <line class="edge-live" x1="180" y1="150" x2="60" y2="50"/>
+          <line class="edge-live" x1="180" y1="150" x2="180" y2="30"/>
+          <line class="edge-live" x1="180" y1="150" x2="300" y2="50"/>
+          <line class="edge-live" x1="180" y1="150" x2="50" y2="150"/>
+          <line class="edge-live" x1="180" y1="150" x2="310" y2="150"/>
+          <line class="edge-live" x1="180" y1="150" x2="60" y2="250"/>
+          <line class="edge-live" x1="180" y1="150" x2="180" y2="270"/>
+          <line class="edge-live" x1="180" y1="150" x2="300" y2="250"/>
+
+          <!-- outer switches -->
+          <circle class="n" cx="60" cy="50" r="10"/>
+          <circle class="n" cx="180" cy="30" r="10"/>
+          <circle class="n" cx="300" cy="50" r="10"/>
+          <circle class="n" cx="50" cy="150" r="10"/>
+          <circle class="n" cx="310" cy="150" r="10"/>
+          <circle class="n" cx="60" cy="250" r="10"/>
+          <circle class="n" cx="180" cy="270" r="10"/>
+          <circle class="n" cx="300" cy="250" r="10"/>
+
+          <!-- logical core: one system -->
+          <circle class="n n-core" cx="180" cy="150" r="20"/>
+          <text x="180" y="153" text-anchor="middle" font-family="var(--mono)" font-size="8.5" fill="var(--paper)">SWAG</text>
+
+          <text class="lbl" x="180" y="292">16 switches — 1 logical system</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="num">2,000+</div>
+      <div class="label">Devices provisioned</div>
+    </div>
+    <div class="stat">
+      <div class="num">250K+</div>
+      <div class="label">Interfaces managed</div>
+    </div>
+    <div class="stat">
+      <div class="num">50+</div>
+      <div class="label">Go microservices</div>
+    </div>
+    <div class="stat">
+      <div class="num">96%</div>
+      <div class="label">Faster pod restarts</div>
+    </div>
+  </div>
+
+  <section class="section tight">
+    <span class="field-label">About</span>
+    <h2 class="section-title" style="margin-top:14px;">A systems engineer who likes the boring parts.</h2>
+    <p class="lede">Most of what I build lives underneath a product, not on top of it — provisioning pipelines, telemetry paths, and the operational tooling that lets a handful of engineers run infrastructure at a scale no one person can watch by hand. I care about the difference between something that works and something that keeps working at 3am.</p>
+  </section>
+
+  <hr class="hairline">
+
+  <section class="section tight">
+    <div class="two-col">
+      <span class="field-label">Currently</span>
+      <div>
+        <h3 style="font-size:22px; margin-bottom:10px;">Software Engineer, Arista Networks</h3>
+        <p style="color:var(--ink-soft); max-width:60ch;">Working across Unified Campus Fabric and CloudVision Pathfinder — Arista's SD-WAN platform — since July 2023. Full story on the <a href="experience.html" style="color:var(--navy); border-bottom:1px solid var(--rule-strong); text-decoration:none;">experience page</a>.</p>
+        <div class="tag-row">
+          <span class="tag">Go</span>
+          <span class="tag">gRPC</span>
+          <span class="tag">HBase</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Grafana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Sai Vamsi Sahukari — NIT Warangal, B.Tech CSE</span>
+    <ul class="footer-links">
+      <li><a href="mailto:saivamsisahukari2002@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/sahukari-sai-vamsi-6238251aa" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/Vamsi-1006" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Sai Vamsi Sahukari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-inner">
+    <a href="index.html" class="brand">Sai Vamsi <span class="brand-mark">/</span> Sahukari</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html" class="active">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="section tight" style="padding-top:56px;">
+    <span class="field-label">Record</span>
+    <h1 class="page-title" style="margin-top:14px;">Experience &amp; Education</h1>
+    <p class="lede">Two initiatives at Arista, four years of coursework at NIT Warangal — laid out in order.</p>
+  </section>
+
+  <section class="section tight">
+    <div class="entry">
+      <div class="when">Jul 2023 — Present<br>Arista Networks</div>
+      <div>
+        <h3>Software Engineer</h3>
+
+        <div class="subentry">
+          <div class="role-sub">Unified Campus Fabric Operations</div>
+          <ul>
+            <li>Architected SWAG (Switch Aggregation Group), a campus fabric architecture that unifies up to 16 switches into a single logical system on hardware supporting 8 GB supervisor memory.</li>
+            <li>Designed and automated end-to-end provisioning workflows for campus network deployments, scaling to 2,000+ devices and 250,000+ interfaces across distributed switch topologies, with 4 enterprise clients actively onboarded on telemetry.</li>
+            <li>Provided technical mentorship to 2+ engineers on system architecture, testing practices, and codebase navigation, helping new hires become productive quickly.</li>
+            <li>Developed a CloudVision Portal app to provision SWAG devices, leveraging Configuration Studio to automate end-to-end config generation and deployment across 24-, 48-, and 96-interface SKUs for flexible campus network topologies.</li>
+          </ul>
+        </div>
+
+        <div class="subentry">
+          <div class="role-sub">CloudVision Pathfinder — SD-WAN Development</div>
+          <ul>
+            <li>Spearheaded CloudVision Pathfinder (Arista's SD-WAN solution) development from design through CVaaS GA, delivering provisioning, telemetry, and visibility dashboards that enabled adoption by 3 enterprise clients.</li>
+            <li>Built and maintained 50+ Go-based microservices processing telemetry from 1,000+ routers, storing versioned data in HBase with sub-second latency for real-time visibility.</li>
+            <li>Monitored production system health via Grafana dashboards tracking 25+ alert categories and 100+ metrics across turbine lifecycle, memory, CPU, and gRPC layers, enabling rapid detection and resolution of critical issues such as OOM kills, panics, and data loss events.</li>
+            <li>Debugged and resolved 30+ complex issues across features, ensuring reliability and performance in production environments.</li>
+            <li>Optimized turbine pod restart time from 50 minutes to 2 minutes (96% improvement) by refactoring the subscription pipeline for high-notification input paths.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2019 — 2023<br>NIT Warangal</div>
+      <div>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <div class="role-sub">GPA 7.95 / 10</div>
+        <p style="color:var(--ink-soft); max-width:60ch;">Coursework spanned data structures and algorithms, computer networks, and systems design — the foundation for the infrastructure work that followed.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Sai Vamsi Sahukari — NIT Warangal, B.Tech CSE</span>
+    <ul class="footer-links">
+      <li><a href="mailto:saivamsisahukari2002@gmail.com">Email</a></li>
+      <li><a href="https://linkedin.com/in/sai-vamsi-sahukari" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/SaiVamsi" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
