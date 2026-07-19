@@ -339,6 +339,32 @@ p { margin: 0 0 1em; }
   gap: 40px;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.portrait-frame {
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-alt);
+  border-radius: 3px;
+  padding: 8px;
+}
+.portrait-frame img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  filter: grayscale(15%);
+}
+
+@media (max-width: 700px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .portrait-frame { max-width: 200px; }
+}
+
 .card {
   border: 1px solid var(--rule);
   border-radius: 3px;
